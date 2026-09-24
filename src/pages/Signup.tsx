@@ -18,7 +18,7 @@ export default function Signup() {
       <div className="hidden md:flex flex-1 bg-surface p-12 flex-col relative overflow-hidden border-r border-border">
          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-accent-900/40 via-transparent to-transparent"></div>
          <Link to="/" className="flex items-center gap-2 relative z-10 w-fit">
-           <img src="/logo.jpg" alt="Lingua Meeting Logo" className="h-24 w-24 rounded-full object-contain bg-white p-3 shadow-lg" />
+           <img src="/logo.png" alt="Lingua Meeting Logo" className="h-24 w-24 rounded-full object-contain bg-white p-3 shadow-lg" />
          </Link>
          
          <div className="mt-auto relative z-10 mb-20">
