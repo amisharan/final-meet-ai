@@ -47,7 +47,10 @@ export default function Dashboard() {
         <div className="p-6">
           <Link to="/" className="flex items-center gap-2">
             <Globe2 className="text-primary-500" size={24} />
-            <span className="font-bold text-xl tracking-tight">Lingua Meet</span>
+            <span className="font-bold text-xl tracking-tight">
+              <span className="text-sky-400">Lingua</span>
+              <span className="text-yellow-400"> Meet</span>
+            </span>
           </Link>
         </div>
         

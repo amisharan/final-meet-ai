@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="border-b border-border bg-surface/50 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.jpg" alt="Lingua Meeting Logo" className="h-20 w-20 rounded-full object-contain bg-white p-2 shadow-md" />
+            <img src="/logo.png" alt="Lingua Meeting Logo" className="h-20 w-20 rounded-full object-contain bg-white p-2 shadow-md" />
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
             <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
