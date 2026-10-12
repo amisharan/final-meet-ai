@@ -3,10 +3,6 @@ import { useState } from 'react';
 import {
   Globe,
   ArrowRight,
-  Mail,
-  Lock,
-  Eye,
-  EyeOff,
   Users,
   ShieldCheck,
   Zap,
@@ -16,7 +12,6 @@ export default function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   
   const handleLogin = (e: React.FormEvent) => {
@@ -136,13 +131,21 @@ export default function Login() {
               <input 
                 type="password" 
                 required
+                value={password}
+                onChange={e => setPassword(e.target.value)}
                 className="w-full bg-white border border-[#D8E6ED] rounded-xl px-4 py-3 text-[#30495D] placeholder-[#9AAEBC] focus:outline-none focus:ring-2 focus:ring-[#159FDD]/30 transition-all"
                 placeholder="••••••••"
               />
             </div>
             
             <div className="flex items-center">
-              <input type="checkbox" id="remember" className="rounded border-[#D8E6ED] text-[#159FDD] focus:ring-[#159FDD]/30" />
+              <input 
+                type="checkbox" 
+                id="remember" 
+                checked={rememberMe}
+                onChange={e => setRememberMe(e.target.checked)}
+                className="rounded border-[#D8E6ED] text-[#159FDD] focus:ring-[#159FDD]/30" 
+              />
               <label htmlFor="remember" className="ml-2 text-sm text-[#45647E]">Remember me</label>
             </div>
             

@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { Globe, Video, ArrowRight } from 'lucide-react';
+import { Video, ArrowRight } from 'lucide-react';
 
 export default function JoinMeeting() {
   const navigate = useNavigate();

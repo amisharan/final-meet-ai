@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, BookOpen, Layers, Zap, Lock, Cpu, Globe } from 'lucide-react';
+import { ArrowLeft, BookOpen, Layers, Cpu, Globe } from 'lucide-react';
 
 export default function Research() {
   return (

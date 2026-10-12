@@ -6,7 +6,7 @@ import { mockLanguages } from '../mockData/languages';
 import { 
   LayoutDashboard, Video, Globe2, BarChart2, Users, 
   Settings, CreditCard, Plug, LogOut, Plus, Search, 
-  Play, Calendar, Clock, X, Check, CheckCircle2, FileText, ArrowRight
+  Calendar, Clock, X, FileText, ArrowRight
 } from 'lucide-react';
 
 export default function Dashboard() {
