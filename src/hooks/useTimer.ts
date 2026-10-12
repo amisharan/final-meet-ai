@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 export function useTimer(startTime?: number) {
-  const [elapsed, setElapsed] = useState(0);
+  const [elapsed, setElapsed] = useState(startTime ?? 0);
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {

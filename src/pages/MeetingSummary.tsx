@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { mockTranscripts } from '../mockData/transcripts';
 import { ArrowLeft, Clock, Users, Globe2, FileText, CheckSquare, Download } from 'lucide-react';
 

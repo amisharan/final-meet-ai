@@ -1,7 +1,5 @@
-import { useState } from 'react';
-
 export default function LiveCaptions() {
-  const [isVisible, setIsVisible] = useState(true);
+  const isVisible = true;
 
   if (!isVisible) return null;
 

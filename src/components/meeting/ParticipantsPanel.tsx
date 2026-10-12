@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { mockParticipants } from '../../mockData/participants';
 import { Mic, MicOff, Video, VideoOff, MoreVertical } from 'lucide-react';
 
