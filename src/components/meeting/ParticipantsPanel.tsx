@@ -13,9 +13,13 @@ export default function ParticipantsPanel() {
         {mockParticipants.map((p) => (
           <div key={p.id} className="flex items-center justify-between p-2 rounded-lg hover:bg-white/5 transition-colors group cursor-pointer">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-primary-900 text-primary-300 flex items-center justify-center font-bold text-xs">
-                {p.name.split(' ').map(n => n[0]).join('')}
-              </div>
+              {p.avatar ? (
+                <img src={p.avatar} alt={p.name} className="w-8 h-8 rounded-full object-cover border border-white/20 bg-slate-900" />
+              ) : (
+                <div className="w-8 h-8 rounded-full bg-primary-900 text-primary-300 flex items-center justify-center font-bold text-xs">
+                  {p.name.split(' ').map(n => n[0]).join('')}
+                </div>
+              )}
               <div>
                 <div className="text-sm font-medium text-white">{p.name} {p.id === '1' && '(You)'}</div>
                 <div className="text-[10px] text-gray-500">{p.role}</div>

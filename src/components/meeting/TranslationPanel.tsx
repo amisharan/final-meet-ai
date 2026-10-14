@@ -23,12 +23,32 @@ export default function TranslationPanel() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between bg-black/20 p-2 rounded-xl border border-white/5">
-          <div className="flex-1 text-center font-medium">{sourceLang}</div>
-          <button className="p-2 hover:bg-white/10 rounded-full transition-colors text-primary-400" onClick={() => { setSourceLang(targetLang); setTargetLang(sourceLang); }}>
+        <div className="flex items-center justify-between bg-black/20 p-2 rounded-xl border border-white/5 gap-2">
+          <select 
+            value={sourceLang} 
+            onChange={(e) => setSourceLang(e.target.value)}
+            className="flex-1 bg-black/40 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-center font-medium text-white outline-none cursor-pointer"
+          >
+            <option value="English">English 🇬🇧</option>
+            <option value="Hindi">Hindi 🇮🇳</option>
+            <option value="Tamil">Tamil 🇮🇳</option>
+            <option value="Urdu">Urdu 🇵🇰</option>
+            <option value="Japanese">Japanese 🇯🇵</option>
+          </select>
+          <button className="p-2 hover:bg-white/10 rounded-full transition-colors text-primary-400 shrink-0" onClick={() => { setSourceLang(targetLang); setTargetLang(sourceLang); }}>
             <ArrowLeftRight size={16} />
           </button>
-          <div className="flex-1 text-center font-medium">{targetLang}</div>
+          <select 
+            value={targetLang} 
+            onChange={(e) => setTargetLang(e.target.value)}
+            className="flex-1 bg-black/40 border border-white/10 rounded-lg px-2 py-1.5 text-xs text-center font-medium text-white outline-none cursor-pointer"
+          >
+            <option value="Hindi">Hindi 🇮🇳</option>
+            <option value="English">English 🇬🇧</option>
+            <option value="Tamil">Tamil 🇮🇳</option>
+            <option value="Urdu">Urdu 🇵🇰</option>
+            <option value="Japanese">Japanese 🇯🇵</option>
+          </select>
         </div>
       </div>
 

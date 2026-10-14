@@ -21,7 +21,12 @@ export default function Login() {
   };
 
   return (
-    <div className=" relative h-screen bg-gradient-to-br from-[#F8FCFF] via-white to-[#FFFCF3] flex flex-col md:flex-row font-sans overflow-auto">
+    <div className="relative h-screen bg-gradient-to-br from-[#F8FCFF] via-white to-[#FFFCF3] flex flex-col md:flex-row font-sans overflow-auto">
+      {/* Background image from public with transparent overlay */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-10 pointer-events-none"
+        style={{ backgroundImage: "url('/background.jpeg')" }}
+      />
       <div className="absolute top-0 right-0 w-72 h-72 bg-[#159FDD]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#F4B91C]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/60 rounded-full blur-3xl pointer-events-none" />

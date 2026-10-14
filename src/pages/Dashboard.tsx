@@ -72,7 +72,11 @@ export default function Dashboard() {
         
         <div className="p-4 border-t border-border mt-auto">
            <div className="flex items-center gap-3 mb-4 px-2">
-              <div className="w-8 h-8 rounded-full bg-primary-600 flex items-center justify-center font-bold text-white text-xs">AR</div>
+              <img
+                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Amisha&backgroundColor=b6e3f4"
+                alt="Amisha Rana"
+                className="w-8 h-8 rounded-full object-cover border border-white/20 bg-slate-900"
+              />
               <div>
                  <div className="text-sm font-medium text-white">Amisha Rana</div>
                  <div className="text-xs text-gray-400">Pro Plan</div>
@@ -151,6 +155,65 @@ export default function Dashboard() {
                        </div>
                      ))}
                    </div>
+                </div>
+
+                {/* Visual Collaboration Showcase */}
+                <div className="grid md:grid-cols-2 gap-6 pt-2">
+                  <div className="rounded-2xl border border-border bg-surface p-5 flex flex-col justify-between group hover:border-primary-500/40 transition-colors">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2">
+                          <Users size={16} className="text-primary-400" />
+                          <h3 className="font-bold text-sm text-white">Hybrid Team Collaboration</h3>
+                        </div>
+                        <span className="text-[10px] font-mono text-primary-400 bg-primary-500/10 px-2 py-0.5 rounded border border-primary-500/20">
+                          cartoon.jpg
+                        </span>
+                      </div>
+                      <div className="rounded-xl overflow-hidden bg-black/40 mb-3 border border-white/5 flex items-center justify-center p-2">
+                        <img 
+                          src="/cartoon.jpg" 
+                          alt="Team Meeting Cartoon" 
+                          className="w-full h-36 object-contain group-hover:scale-105 transition-transform duration-500" 
+                        />
+                      </div>
+                      <p className="text-xs text-gray-400 leading-relaxed mb-3">
+                        Multi-party conference table translation isolating unique voices and accents across Hindi, English, Tamil, Urdu & Japanese.
+                      </p>
+                    </div>
+                    <Link to="/how-it-works" className="text-xs text-primary-400 hover:text-primary-300 font-medium flex items-center gap-1">
+                      <span>View system architecture</span>
+                      <ArrowRight size={12} />
+                    </Link>
+                  </div>
+
+                  <div className="rounded-2xl border border-border bg-surface p-5 flex flex-col justify-between group hover:border-indigo-500/40 transition-colors">
+                    <div>
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2">
+                          <Video size={16} className="text-indigo-400" />
+                          <h3 className="font-bold text-sm text-white">Virtual AI Meeting Room</h3>
+                        </div>
+                        <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                          page.png
+                        </span>
+                      </div>
+                      <div className="rounded-xl overflow-hidden bg-black/40 mb-3 border border-white/5 flex items-center justify-center p-2">
+                        <img 
+                          src="/page.png" 
+                          alt="Virtual Video Call Interface" 
+                          className="w-full h-36 object-contain group-hover:scale-105 transition-transform duration-500" 
+                        />
+                      </div>
+                      <p className="text-xs text-gray-400 leading-relaxed mb-3">
+                        Browser-based HD video call with synchronized bi-directional captions, speaker tracking, and interactive chat translation.
+                      </p>
+                    </div>
+                    <Link to="/meeting/demo" className="text-xs text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-1">
+                      <span>Launch live demo room</span>
+                      <ArrowRight size={12} />
+                    </Link>
+                  </div>
                 </div>
               </div>
             } />
@@ -262,19 +325,27 @@ export default function Dashboard() {
                      </div>
                    </div>
                    <div className="bg-surface border border-border rounded-2xl p-6">
-                     <h3 className="font-bold mb-4 text-gray-300">Translation Usage by Language</h3>
+                     <h3 className="font-bold mb-4 text-gray-300">Translation Usage by Target Language</h3>
                      <div className="space-y-4 mt-8">
                         <div>
-                          <div className="flex justify-between text-sm mb-1"><span>Hindi</span><span>45%</span></div>
-                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-accent-500 w-[45%]"></div></div>
+                          <div className="flex justify-between text-sm mb-1"><span>Hindi (हिंदी)</span><span>38%</span></div>
+                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-accent-500 w-[38%]"></div></div>
                         </div>
                         <div>
-                          <div className="flex justify-between text-sm mb-1"><span>French</span><span>30%</span></div>
-                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-blue-500 w-[30%]"></div></div>
+                          <div className="flex justify-between text-sm mb-1"><span>English</span><span>32%</span></div>
+                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-blue-500 w-[32%]"></div></div>
                         </div>
                         <div>
-                          <div className="flex justify-between text-sm mb-1"><span>Spanish</span><span>25%</span></div>
-                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-orange-500 w-[25%]"></div></div>
+                          <div className="flex justify-between text-sm mb-1"><span>Tamil (தமிழ்)</span><span>14%</span></div>
+                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-emerald-500 w-[14%]"></div></div>
+                        </div>
+                        <div>
+                          <div className="flex justify-between text-sm mb-1"><span>Urdu (اردو)</span><span>10%</span></div>
+                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-purple-500 w-[10%]"></div></div>
+                        </div>
+                        <div>
+                          <div className="flex justify-between text-sm mb-1"><span>Japanese (日本語)</span><span>6%</span></div>
+                          <div className="h-2 bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-pink-500 w-[6%]"></div></div>
                         </div>
                      </div>
                    </div>
@@ -376,7 +447,13 @@ export default function Dashboard() {
                        <div className="font-bold text-white">Default Source Language</div>
                        <div className="text-sm text-gray-400">Language you speak most often</div>
                      </div>
-                     <select className="bg-black/40 border border-white/10 rounded-lg px-3 py-1.5 text-sm text-white outline-none"><option>English</option><option>Hindi</option></select>
+                     <select className="bg-black/40 border border-white/10 rounded-lg px-3 py-1.5 text-sm text-white outline-none">
+                       <option>English</option>
+                       <option>Hindi (हिंदी)</option>
+                       <option>Tamil (தமிழ்)</option>
+                       <option>Urdu (اردو)</option>
+                       <option>Japanese (日本語)</option>
+                     </select>
                   </div>
                   <div className="p-6 flex items-center justify-between">
                      <div>
@@ -423,16 +500,20 @@ export default function Dashboard() {
                   <label className="block text-sm font-medium text-gray-300 mb-1.5">Your Language</label>
                   <select className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 appearance-none">
                     <option>English</option>
-                    <option>Hindi</option>
-                    <option>French</option>
+                    <option>Hindi (हिंदी)</option>
+                    <option>Tamil (தமிழ்)</option>
+                    <option>Urdu (اردو)</option>
+                    <option>Japanese (日本語)</option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-1.5">Target Translation</label>
                   <select className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-500/50 appearance-none">
-                    <option>Hindi</option>
+                    <option>Hindi (हिंदी)</option>
                     <option>English</option>
-                    <option>French</option>
+                    <option>Tamil (தமிழ்)</option>
+                    <option>Urdu (اردو)</option>
+                    <option>Japanese (日本語)</option>
                   </select>
                 </div>
               </div>

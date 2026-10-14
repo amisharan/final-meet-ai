@@ -110,9 +110,11 @@ export default function MeetingRoom() {
                      )
                    ) : (
                      <div className="w-full h-full flex flex-col items-center justify-center bg-gray-800 bg-gradient-to-br from-gray-800 to-gray-900">
-                        <div className="w-24 h-24 rounded-full bg-primary-600 flex items-center justify-center text-4xl font-bold text-white shadow-xl mb-4">
-                          AR
-                        </div>
+                        <img
+                          src="https://api.dicebear.com/7.x/avataaars/svg?seed=Amisha&backgroundColor=b6e3f4"
+                          alt="Amisha Rana"
+                          className="w-24 h-24 rounded-full object-cover shadow-2xl mb-4 border-2 border-primary-500/60 bg-slate-900"
+                        />
                         <div className="text-2xl text-white font-medium">Amisha Rana</div>
                      </div>
                    )}
@@ -165,7 +167,7 @@ export default function MeetingRoom() {
                   <Globe className="text-primary-500 shrink-0 mt-0.5" size={20} />
                   <div className="text-sm">
                     <div className="font-bold text-primary-400 mb-1">AI Translation Ready</div>
-                    <div className="text-gray-400">Your meeting is configured for real-time translation (English ↔ Hindi).</div>
+                    <div className="text-gray-400">Your meeting is configured for real-time translation (Hindi, English, Tamil, Urdu, Japanese).</div>
                   </div>
                 </div>
              </div>
@@ -245,9 +247,11 @@ export default function MeetingRoom() {
                  )
               ) : (
                 <div className="w-full h-full flex flex-col items-center justify-center bg-gray-800 bg-gradient-to-br from-gray-800 to-gray-900">
-                  <div className="w-24 h-24 rounded-full bg-primary-600 flex items-center justify-center text-4xl font-bold text-white shadow-xl mb-3">
-                    AR
-                  </div>
+                  <img
+                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Amisha&backgroundColor=b6e3f4"
+                    alt="Amisha Rana"
+                    className="w-24 h-24 rounded-full object-cover shadow-2xl mb-3 border-2 border-primary-500/60 bg-slate-900"
+                  />
                   <div className="text-xl text-white font-medium">Amisha Rana</div>
                 </div>
               )}

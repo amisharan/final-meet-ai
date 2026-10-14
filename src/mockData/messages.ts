@@ -43,11 +43,29 @@ export const mockTranslations: TranslationMessage[] = [
   },
   {
     id: 't3',
-    speaker: 'Amisha Rana',
+    speaker: 'Karthik V.',
     timestamp: '10:07 AM',
-    originalText: 'Yes, absolutely. Let me share my screen.',
-    translatedText: 'हाँ, बिल्कुल। मुझे अपनी स्क्रीन साझा करने दें।',
-    sourceLang: 'en',
-    targetLang: 'hi'
+    originalText: 'கட்டமைப்பு வரைபடம் தயாராக உள்ளது.',
+    translatedText: 'The architecture diagram is ready to review.',
+    sourceLang: 'ta',
+    targetLang: 'en'
+  },
+  {
+    id: 't4',
+    speaker: 'Zainab K.',
+    timestamp: '10:08 AM',
+    originalText: 'ہمیں کلاؤڈ تعیناتی کی جانچ بھی کرنی چاہیے۔',
+    translatedText: 'We should also verify the edge node deployment.',
+    sourceLang: 'ur',
+    targetLang: 'en'
+  },
+  {
+    id: 't5',
+    speaker: 'Kenji T.',
+    timestamp: '10:09 AM',
+    originalText: 'プロジェクトの進捗は非常に順調です。',
+    translatedText: 'The meeting translation quality is outstanding.',
+    sourceLang: 'ja',
+    targetLang: 'en'
   }
 ];
